@@ -15,7 +15,7 @@ namespace Bookshelf.Models
         public DateTime PublishedDate { get; set; }
         public string Description { get; set; }
         public string ISBN { get; set; }
-        [ForeignKey("Caegory")]
+        [ForeignKey("Category")]
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
     }
